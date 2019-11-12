@@ -1,6 +1,6 @@
 from flask import Flask
 from pymongo import MongoClient
-from flask import request, jsonify, render_template
+from flask import request, jsonify, render_template, url_for
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
@@ -8,11 +8,18 @@ app = Flask(__name__)
 murl = "mongodb://localhost:27017/"
 client = MongoClient(murl)
 
+@app.route('/')
+def index():
+    return render_template('index.html')
+
 @app.route('/about')
 def about():
     return render_template('about.html')
 
-@app.route('/signup', methods = ["POST"])
+@app.route('/signup')
+def signup_page():
+    return render_template('signup.html')
+
 def signup():
     internship = client["internship"]
     student = internship["student"]
