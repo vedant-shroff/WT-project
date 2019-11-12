@@ -28,11 +28,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700" rel="stylesheet">
 	
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/login.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Themify Icons-->
 	<link rel="stylesheet" href="css/themify-icons.css">
@@ -59,7 +56,8 @@
 	</head>
 	<body>
 		
-
+	<div class="gtco-loader"></div>
+	
 	<div id="page">
 
 			<nav class="gtco-nav" role="navigation">
@@ -69,7 +67,7 @@
 								<ul>
 									<li><a href="index.html">Home</a></li>
 									<li><a href="about.html">About</a></li>
-									<li class="active"><a href="browse.html">Browse</a></li>
+									<li><a href="browse.html">Browse</a></li>
 									<li><a href="https://kjsce.somaiya.edu/kjsce/">Contact</a></li>
 								</ul>
 							</div>
@@ -82,18 +80,17 @@
 						</div>
 					</div>
 				</nav>
-		<!-- END #gtco-header -->		
 
-		<header id="gtco-header" class="gtco-cover gtco-cover-xs gtco-inner">
+		<header id="gtco-header" class="gtco-cover gtco-cover-xs gtco-inner" role="banner">
 			<div class="gtco-container">
 				<div class="row">
-					<div class="col-md-12 col-md-offset-0 text-center">
+					<div class="col-md-12 col-md-offset-2 text-center">
 						<div class="display-t">
 							<div class="display-tc">
 								<div class="row">
-									<div class="col-md-12 animate-box">
-										<h1 class="no-margin">Browse internships</h1>
-										<p>Browse searhc and apply for opportunities that interest you on this page</p>
+									<div class="col-md-8 animate-box">
+										<h1 class="no-margin">Create Internship</h1>
+										<p>Fill the form to create an internship opportunity under your name</p>
 									</div>
 								</div>
 							</div>
@@ -102,88 +99,73 @@
 				</div>
 			</div>
 		</header>
+		<!-- END #gtco-header -->
 
 		
 
-		<div class="gtco-services gtco-section">
-				<div class="gtco-container">
-					<div class="row row-pb-sm">
-						<div class="col-md-10 col-md-offset-1">
-
-								<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-								<div class="spbar"></div>
-								<div class="panel-group" id="accordion">
-										<div class="panel panel-default">
-										  <div class="panel-heading">
-											<h4 class="panel-title">
-											  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><div class="text-center"><h3>Javascript App for Lorem Ipsum</h3></div><br><br><h4>Prof Yash Rathod<br><br>2-month internship<br><br>4-5 people</h4></a>
-											<div class="text-right"><div class="btn">Apply</div>    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><div class="btn">Next</div></a></div>
-											
-										</h4>  
-										</div>
-										  <div id="collapse1" class="panel-collapse collapse in">
-											<div class="panel-body">JOB DESCRIPTION :<p class="tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-											sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-										PROFESSORS :<p class="tab">
-											<a href="www.youtube.com'pewdiepie">Dr. Yash Rathod</a><br>
-											<a href="www.youtube.com'pewdiepie">Dr. Prithvi Shah</a><br>
-											<a href="www.youtube.com'pewdiepie">Dr. Jinit Punamiya</a>
-										</p>
-										COMMENTS:<p class="tab">
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-												sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-										</p>
-										PREREQUISITES:<p class="tab">
-											<ul>
-												<li>TY Students Only</li>
-												<li>PHP</li>
-												<li>Javascript</li>
-												<li>Electron</li>
-											</ul>
-										</p>
+		<div class="gtco-section">
+			<div class="gtco-container">
+				<div class="row">
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<form action="#">
+							<div class="form-group">
+								<label for="name">Title</label>
+								<input type="text" class="form-control" id="name">
+							</div>
+							<div class="form-group">
+								<label for="name">Duration (months)</label>
+									<select class="form-control" id="duration">
+									  <option>1</option>
+									  <option>2</option>
+									  <option>3</option>
+									  <option>1.5</option>
+									  <option>6</option>
+									  <option>Other</option>
+									</select>
+							</div>
+							<div class="form-group">
+								<label for="message">Description</label>
+								<textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+							</div>
+							<div class="form-group">
+								<input type="submit" class="btn btn btn-special" value="Create">
+							</div>
+							<div class="form-group">
+									
+								  </div>
+						</form>
+					</div>
+					<div class="col-md-6 col-md-push-0">
+							<form action="#">
+									<div class="form-group">
+										<label for="name">Associate Professors</label>
+										<input type="text" class="form-control" id="aspf">
 									</div>
-										  </div>
-										</div>
-										<div class="panel panel-default">
-										  <div class="panel-heading">
-											<h4 class="panel-title">
-													<a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><b>Flutter App for Lorem Ipsum</b><br><br>Prof Yash Rathod<br><br>2-month internship<br><br>4-5 people</a>
-												</h4>
-												<div class="text-right"><div class="btn">Apply</div>    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><div class="btn">Next</div></a></div>
-
-										  </div>
-										  <div id="collapse2" class="panel-collapse collapse">
-											<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-											sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-										  </div>
-										</div>
-										<div class="panel panel-default">
-										  <div class="panel-heading">
-											<h4 class="panel-title">
-													<a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><b>Documentation for Lorem Ipsum</b><br><br>Prof Yash Rathod<br><br>2-month internship<br><br>4-5 people</a>
-												</h4>
-												<div class="text-right"><div class="btn">Apply</div>    <a data-toggle="collapse" data-parent="#accordion" href="#"><div class="btn">Next</div></a></div>
-										  </div>
-										  <div id="collapse3" class="panel-collapse collapse">
-											<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-											sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-										  </div>
-										</div>
-									  </div> 
+									<div class="form-group">
+										<label for="message">Prerequisites</label>
+										<textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
 									</div>
-						</div>			
+									<div class="form-group">	
+										  </div>
+										  <div class="form-group">
+												<label for="name">Student Year</label>
+													<select class="form-control" id="duration">
+													  <option>1</option>
+													  <option>2</option>
+													  <option>3</option>
+													  <option>4</option>
+													  <option>All</option>
+													</select>
+											</div>
+								</form>
 					</div>
 				</div>
-			</div>		
-			
+			</div>
+		</div>
 		<!-- END .gtco-services -->
 
-		
-		
 		
 
 		<footer id="gtco-footer" class="gtco-section" role="contentinfo">
